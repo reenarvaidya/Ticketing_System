@@ -27,7 +27,15 @@
                 <input type="checkbox" class="form-check-input" id="remember-me">
                 <label class="form-check-label" for="remember-me">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+            <button type="submit" class="btn btn-primary btn-block" onclick="showNotification()">Sign up</button>
+
+<script>
+  function showNotification() {
+    alert("Your account has been created! Move to Sign in.");
+    window.location.href = "login.html"; // Change the URL to your actual sign-in page
+  }
+</script>
+
         </form>
         <div class="text-center my-4">
             <p class="text-muted">ACCESS QUICKLY</p>
